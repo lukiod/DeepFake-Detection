@@ -33,7 +33,7 @@ std=[0.229, 0.224, 0.225]
 sm = nn.Softmax()
 inv_normalize =  transforms.Normalize(mean=-1*np.divide(mean,std),std=np.divide([1,1,1],std))
 if torch.cuda.is_available():
-    device = 'gpu'
+    device = 'cuda'
 else:
     device = 'cpu'
 
@@ -279,7 +279,7 @@ def predict_page(request):
         video_dataset = validation_dataset(path_to_videos, sequence_length=sequence_length, transform=train_transforms)
 
         # Load model
-        if(device == "gpu"):
+        if(device == "cuda"):
             model = Model(2).cuda()  # Adjust the model instantiation according to your model structure
         else:
             model = Model(2).cpu()  # Adjust the model instantiation according to your model structure
