@@ -36,8 +36,6 @@ SIH-2024
   <img src="https://github.com/lukiod/SIH-2024/tree/main/github_assets/System%20Architecture.png" />
 </p>
 
-## 4. Demo 
-### You can watch the [youtube video](https://www.youtube.com/watch?v=_q16aJTXVRE&t=823s) for demo
 
 <p align="center">
   <img src="https://github.com/lukiod/SIH-2024/tree/main/github_assets/fakegif.gif" />
